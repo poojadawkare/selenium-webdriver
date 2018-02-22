@@ -38,7 +38,7 @@ public class Formcheck {
 
 		driver.navigate().back();
 
-		// To get the WebsiteTitle
+		//To get the WebsiteTitle
 		System.out.println(driver.getTitle());
 
 		WebElement text = driver.findElement(By.name("firstname"));
@@ -110,6 +110,7 @@ public class Formcheck {
 		login.click();
 
 		System.out.println("log in successfully!!");
+		System.out.println("log2 in successfully!!");
 
 	}
 
