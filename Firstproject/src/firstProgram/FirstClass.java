@@ -13,7 +13,7 @@ public class FirstClass {
 		// To get property of ChromeDriver
 
 		// System.setProperty("webdriver.gecko.driver","C:\\ProgramFiles\\Java\\geckodriver.exe");
-		//System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\chromedriver.exe");
 
 		// instance of ChromeDriver
 
@@ -54,6 +54,7 @@ public class FirstClass {
 		// facebooklogin
 
 		WebElement email = driver.findElement(By.name("email"));
+
 		email.sendKeys("poodawkare@gmail.com");
 
 		WebElement password = driver.findElement(By.name("pass"));

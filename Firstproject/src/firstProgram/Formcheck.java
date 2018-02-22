@@ -38,7 +38,7 @@ public class Formcheck {
 
 		driver.navigate().back();
 
-		// To get the website title
+		// To get the WebsiteTitle
 		System.out.println(driver.getTitle());
 
 		WebElement text = driver.findElement(By.name("firstname"));
@@ -98,19 +98,18 @@ public class Formcheck {
 		DrpContinets.selectByVisibleText("Africa");
 
 		Select seleniumcommands = new Select(driver.findElement(By.id("selenium_commands")));
-		
+
 		seleniumcommands.selectByIndex(3);
-		seleniumcommands.selectByIndex(2);
+	
+		//seleniumcommands.selectByIndex(2);
+		seleniumcommands.deselectByIndex(2);
+		
+		
 
 		WebElement login = driver.findElement(By.id("submit"));
 		login.click();
-		
+
 		System.out.println("log in successfully!!");
-		
-		
-		
-		
-		
 
 	}
 

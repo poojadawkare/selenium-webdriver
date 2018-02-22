@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+//import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 
 public class Demo {
@@ -11,6 +12,9 @@ public class Demo {
 	public static void main(String[] args) {
 
 		System.setProperty("webdriver.chrome.driver", "C:\\Program Files\\Java\\Chromedriver.exe");
+		// System.setProperty("webdriver.gecko.driver","C:\\ProgramFiles\\Java\\geckodriver.exe");
+
+		// WebDriver driver = new FirefoxDriver();
 
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.facebook.com");
@@ -22,11 +26,10 @@ public class Demo {
 		WebElement password = driver.findElement(By.name("pass"));
 
 		password.sendKeys("poojadawkare@123");
-		
-		
+
 		WebElement link1 = driver.findElement(By.linkText("Forgotten account?"));
 		link1.click();
-		
+
 		driver.navigate().back();
 
 		// WebElement LogIn = driver.findElement(By.id("u_0_2"));
@@ -56,7 +59,7 @@ public class Demo {
 		DrpBirthday.selectByVisibleText("25");
 
 		Select DrpBirthday1 = new Select(driver.findElement(By.id("month")));
-	    DrpBirthday1.selectByVisibleText("Oct");
+		DrpBirthday1.selectByVisibleText("Oct");
 
 		Select DrpBirthday2 = new Select(driver.findElement(By.id("year")));
 		DrpBirthday2.selectByVisibleText("1994");
