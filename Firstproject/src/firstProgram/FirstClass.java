@@ -63,6 +63,10 @@ public class FirstClass {
 
 		WebElement login = driver.findElement(By.id("u_0_3"));
 		login.click();
+		
+		
+		String mainPage = null;
+		driver.switchTo().window(mainPage);
 
 		// gmail Login
 

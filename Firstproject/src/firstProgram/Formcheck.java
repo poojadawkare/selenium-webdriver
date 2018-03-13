@@ -38,7 +38,7 @@ public class Formcheck {
 
 		driver.navigate().back();
 
-		//To get the WebsiteTitle
+		// To get the WebsiteTitle
 		System.out.println(driver.getTitle());
 
 		WebElement text = driver.findElement(By.name("firstname"));
@@ -100,11 +100,9 @@ public class Formcheck {
 		Select seleniumcommands = new Select(driver.findElement(By.id("selenium_commands")));
 
 		seleniumcommands.selectByIndex(3);
-	
-		//seleniumcommands.selectByIndex(2);
+
+		// seleniumcommands.selectByIndex(2);
 		seleniumcommands.deselectByIndex(2);
-		
-		
 
 		WebElement login = driver.findElement(By.id("submit"));
 		login.click();
